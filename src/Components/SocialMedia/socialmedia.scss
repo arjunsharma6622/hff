@@ -1,0 +1,27 @@
+.socialmedia{
+    margin: 1rem;
+    text-align: center;
+
+    .text{
+        text-align: center;
+    }
+    .i-icons{
+        display: flex;
+        flex-direction: row;
+
+        .icons{
+            color: rgb(38, 122, 196);
+            // font-size: 4rem;
+            margin: 0 1.5rem;
+            transition: all ease 0.3s;
+            &:hover{
+                transform: scale(1.3);
+                color: rgb(243, 192, 39);
+            }
+
+            @media screen and (max-width : 360px){
+                margin: 0 10px;
+            }
+        }
+    }
+}

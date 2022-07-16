@@ -1,0 +1,54 @@
+.team{
+    .members_container{
+        display: flex;
+        padding: 4rem;
+        align-items: center;
+        justify-content: center;
+        .members_container_wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px 50px;  
+
+
+            @media screen and (max-width : 1200px){
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px 30px;   
+            }
+            @media screen and (max-width : 1111px){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px 60px;   
+            }
+            @media screen and (max-width : 900px){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px 40px;  
+            }
+            @media screen and (max-width : 850px){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px 20px;  
+            }
+            @media screen and (max-width : 800px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 70px;  
+            }
+            @media screen and (max-width : 600px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 50px;  
+            }
+            @media screen and (max-width : 550px){
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+                // gap: 40px 25px;  
+            }
+        }
+}
+}

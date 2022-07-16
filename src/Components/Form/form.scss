@@ -1,0 +1,114 @@
+.contact_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .contact_form_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            text-align: center;
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        @media screen and (max-width : 670px){
+            flex-direction: column;
+
+        }
+    }
+
+    .middle{
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .bottom{
+        width: 90%;
+
+        input, textarea{
+            color: rgb(0, 0, 0);
+            border: none;
+            border-bottom: 1px solid #19191d;
+            resize: none;
+            margin-bottom: 2rem;
+            font-size: 18px;
+            width: 100%;
+            font-family: 'Nunito', sans-serif;
+            padding: 10px;
+            letter-spacing: 2px;
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .b_top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+
+            }
+
+            .button{
+                border: none;
+                background-color: #ffac11;
+                border-radius: 5px;
+                padding: 10px;
+                width: 30%;
+                font-size: 17px;
+                margin-top: 4rem;
+                transition: 0.2s all ease;
+                
+                &:hover{
+                    color: white;
+                    background-color: #19191d;
+                }
+
+            }
+        }
+
+        @media screen and (max-width : 670px){
+            input, textarea{
+                // font-size: 18px;
+                // width: 90%;
+                padding: 5px;
+                font-size: 15px;
+                width: 87vw;
+
+            }
+
+            .form{
+                .b_top{
+                    flex-direction: column;
+                }
+    
+            }
+        }
+    }
+
+
+    margin-bottom: 4rem;
+}
