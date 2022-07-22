@@ -1,0 +1,30 @@
+.serviceCard{
+    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+
+    transition: 0.4s all ease;
+
+    // &:hover{
+    //     transform: scale(1.1);
+    // }
+    .serviceCardWrapper{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 30px;
+        .service_image{
+            img{
+                height: 60px;
+                width: 60px;
+                object-fit: cover;
+            }
+        }
+        .service_title{
+            font-size: 20px;
+
+        }
+
+    }
+}

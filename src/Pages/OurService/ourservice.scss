@@ -1,0 +1,18 @@
+.ourservice{
+    color: rgb(128, 126, 126);
+
+    .serviceCards{
+        margin: 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 50px;  
+        margin-bottom: 60vh;
+        
+
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

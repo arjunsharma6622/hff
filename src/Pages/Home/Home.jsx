@@ -18,13 +18,14 @@ export const Home = () => {
           </p>
         </div>
 
-
         <div className="about">
+        <h2 className="aboutUs">About Us</h2>
               <p className="aboutContent1">
-              <span>Hero For Fun</span> is a Team Founded by us a bunch of <span>College Students</span> who were bored and kinda had an urge to make our lives interesting by doing something that could make the world a better place. We try working as a team to solve regular day to day problems with <span>modern solutions</span> be it for<span> humans / animals</span>, we always strive towards <span>working for the good</span>.
+              <span>Hero For Fun</span> is a Team Founded by us, a bunch of <span>College Students</span> who were bored and kind of had an urge to make our lives interesting by doing something that could make the world a better place. We try working as a team to solve regular day to day problems with <span>modern solutions</span> be it for<span> humans / animals</span>, we always strive towards <span>working for the good</span>.
               </p>
+              <h2 className="motto">Our Motto</h2>
               <p className="aboutContent2">
-              Serving our society for the good has always been our Moto and knowing that we gotta get started somewhere, we came up with Hero For Fun, with huge ambitions and visions that we’d do great things if we simply don’t shy away and out ourselves to action out there by getting started.
+              <span>Serving our society</span> for the good has always been our Motto and knowing that we got to get started somewhere, we came up with Hero For Fun, with <span>huge ambitions and visions</span> that we'd do great things if we simply don't shy away and <span>put ourselves to action</span> out there by getting started.
               </p>
             </div>
       </div>

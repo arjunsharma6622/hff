@@ -1,7 +1,7 @@
 .donate{
     .donate_container{
         height: 80vh;
-        margin-top: 4rem;
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,35 +15,87 @@
             gap: 2rem;
 
 
+            .form_link{
+                cursor: pointer;
+                padding: 5px;
+                a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                }
+                background-color: #eaf16b;
+                border-radius: 5px;
+                width: 250px;
+                height: 30px;
+            }
+
+
             h1{
                 font-size: 70px;
                 font-weight: 400;
                 letter-spacing: 2px;
-                background-color: rgb(255, 179, 57);
                 padding: 10px;
+                color: #e26d28;
+            }
+            .donateText {
+                font-size: 20px;
+                letter-spacing: 1.3px;
+                line-height: 40px;
+                margin-top: -1rem;
+                margin-bottom: 2rem;
+                color: rgb(56, 56, 56);
+            }
+            .enterAmount {
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: -1.5rem;
+                color: #7F8487;
 
             }
-
-            p{
-                margin-top: 1rem;
-                font-size: 25px;
-
-
+            .inputBox {
+                width:50%;
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 1.5px;
+                text-align: center;
+                color: #BDC7C9;
+                background-color: #fff;
+                outline: none;
+                transition: all 0.3s ease-in-out;
+                &:focus {
+                    border: 1px solid #E2703A;
+                    box-shadow: 0 0 7px #E2703A;
+                }
             }
+            .donate_button{
+                margin-bottom: 1rem;
+                font-size: 20px;
+                color: #fff;
+                border: none;
+                padding: 10px 20px 10px 20px;
+                letter-spacing: 1.5px;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #E2703A;
 
+                &:hover {
+                    transition: all 0.4s ease-in-out;
+                }
+            }
             .donate{
-                margin-top: 2rem;
                 padding: 15px;
-                width: 40%;
+                width: 20%;
                 font-size: 24px;
-                letter-spacing: 5px;
-                border-radius: 20px;
+                border-radius: 5px;
                 border: none;
                 background-color: rgba(73, 125, 255, 0.844);
             }
         }
 
-        @media screen and (max-width:350px){
+        @media screen and (max-width:400px){
             height:100%;
             // width: 96%;
 
@@ -53,7 +105,6 @@
                 font-size: 40px;
                 font-weight: 400;
                 letter-spacing: 1px;
-                background-color: rgb(255, 179, 57);
                 padding: 5px;
 
             }
@@ -66,7 +117,7 @@
 
             }
 
-            .donate{
+            .form_link{
                 margin-bottom: 5rem;
             }
         }

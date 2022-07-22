@@ -18,11 +18,12 @@
                 text-align: center;
                 padding-top: 1rem;
                 margin-bottom: 1rem;
+                color: #fd9526;
             }
             .tagline {
                 font-size: 27px;
                 letter-spacing: 2px;
-                
+                color: rgb(109, 98, 79);  
             }
         }
 
@@ -30,19 +31,42 @@
             font-size: 20px;
             letter-spacing: 1.3px;
             line-height: 40px;
-            margin-top: 2rem;
+            margin-top: 5rem;
             margin-bottom: 4rem;
+            color: rgb(47, 47, 47);
+
+            .aboutUs{
+                color: #E2703A;
+                font-size: 40px;
+                letter-spacing: 2px;
+                font-weight: 600;
+            }
+
 
             span{
-                color: rgb(89, 43, 255);
+                color: #ff6741;
+                font-family: 'Finlandica', sans-serif;
+
             }
 
             .aboutContent1, .aboutContent2{
-                margin: 10px;
-                margin-top: 5rem;
+                margin-top: 2rem;
+                margin-bottom: 5rem;
+            }
+
+            .motto{
+                color: #E2703A;
+                font-size: 40px;
+                letter-spacing: 2px;
+                font-weight: 600;
             }
 
         }
+
+
+        // @media screen and (max-width){
+            
+        // }
 
 
         @media screen and (max-width : 350px){
@@ -57,7 +81,6 @@
                 }
                 .tagline{
                     font-size: 24px;
-
                 }
             }
 

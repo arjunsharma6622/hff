@@ -1,0 +1,66 @@
+.AnimalEmergencySystem{
+    .aes_wrapper{
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+
+        text-align: center;
+        .heading{
+            margin: 1rem;
+            .image{
+                img{
+                    width: 250px;
+                }
+            }
+            h1{
+                margin: 1rem;
+                font-size: 60px;
+                font-weight: normal;
+            }
+
+        }
+        .contact{
+            margin: 1.5rem;
+            font-size: 35px;
+            font-weight: normal;
+
+            .numbers{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    font-size: 20px;
+                    margin-top: 10px;
+                    box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+                    border-radius: 10px;
+                    padding: 10px;
+                    // background-color: yellow;
+                    letter-spacing: 3px;
+                    // width: 300px;
+
+                    span{
+                        padding: 5px;
+                        height: 40px;
+                        width: 40px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        // background-color: rgb(255, 255, 255);
+                        background-color: yellow;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

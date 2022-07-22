@@ -1,19 +1,17 @@
-.team{
+.supporters{
+    .supporters_cards{
+        margin: 0 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
 
-    .members_container{
         display: flex;
-        padding: 4rem;
         align-items: center;
         justify-content: center;
-        .members_container_wrapper{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+        .supporters_cards_wrapper{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 40px 50px;  
-
+            gap: 40px 50px; 
+            
 
             @media screen and (max-width : 1200px){
                 display: grid;
@@ -51,5 +49,5 @@
                 // gap: 40px 25px;  
             }
         }
-}
+    }
 }
