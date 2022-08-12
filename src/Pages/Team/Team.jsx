@@ -9,6 +9,10 @@ const Team = () => {
     <div className="team">
       <Navbar />
 
+      <div className="heading">
+        <h1>Our Team</h1>
+      </div>
+
       <div className="members_container">
         <div className="members_container_wrapper">
           <TeamMemberCard
@@ -43,7 +47,7 @@ const Team = () => {
 
           <TeamMemberCard 
             name="Maachana Aneesh" 
-            role="Strategic Relations" 
+            role=" " 
             img="Aneesh2_HFF.png" 
 
             // linkedIn_link=""
@@ -63,12 +67,39 @@ const Team = () => {
           
           <TeamMemberCard
             name="S.B. Avinash"
-            role="Public Relations"
+            role=" "
             img="Avinash_HFF.png"
 
             // linkedIn_link=""
             Twitter_link="https://mobile.twitter.com/Avinash78072864"
             Ig_link="https://www.instagram.com/_avinash_sb/"
+          />
+
+          <TeamMemberCard
+            name="Kolli Krupakar"
+            role="Design"
+            img="Krupakar_Hff.jpg"
+
+            // linkedIn_link=""
+            Twitter_link="https://mobile.twitter.com/Kolli11279846"
+            Ig_link="https://instagram.com/_fn_2187?igshid=YmMyMTA2M2Y="
+          />
+
+          <TeamMemberCard
+            name="Neel Lohith"
+            role=" "
+            img="Lohith_HFF.png"
+
+            linkedIn_link="http://www.linkedin.com/in/neel-lohith-2a592b211"
+            Ig_link="https://www.instagram.com/heywassup_naka/"
+          />
+
+          <TeamMemberCard
+            name="Tanishq Arun"
+            role=" "
+            img="Tanishq_HFF.png"
+
+            Ig_link="https://instagram.com/tanishqarun?igshid=YmMyMTA2M2Y="
           />
         </div>
       </div>

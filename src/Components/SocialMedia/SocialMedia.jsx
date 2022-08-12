@@ -10,7 +10,7 @@ const SocialMedia = () => {
         <a
           target="_blank"
           className="icons"
-          href="https://www.linkedin.com/in/siddharth-srinivasan-1a7a34202/"
+          href="https://www.linkedin.com/company/hero-for-fun/"
         >
           <span>
             <LinkedIn style={{ fontSize: "50px" }} />
@@ -19,28 +19,10 @@ const SocialMedia = () => {
         <a
           target="_blank"
           className="icons"
-          href="https://www.linkedin.com/in/siddharth-srinivasan-1a7a34202/"
+          href="https://www.instagram.com/_hero.for.fun_/"
         >
           <span>
             <Instagram style={{ fontSize: "50px" }} />
-          </span>
-        </a>
-        <a
-          target="_blank"
-          className="icons"
-          href="https://www.linkedin.com/in/siddharth-srinivasan-1a7a34202/"
-        >
-          <span>
-            <YouTube style={{ fontSize: "50px" }} />
-          </span>
-        </a>
-        <a
-          target="_blank"
-          className="icons"
-          href="https://www.linkedin.com/in/siddharth-srinivasan-1a7a34202/"
-        >
-          <span>
-            <Twitter style={{ fontSize: "50px" }} />
           </span>
         </a>
 

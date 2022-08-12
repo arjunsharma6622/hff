@@ -25,6 +25,9 @@ const Donate = () => {
       </div>
 
 
+
+
+
       <Footer />
     </div>
   )

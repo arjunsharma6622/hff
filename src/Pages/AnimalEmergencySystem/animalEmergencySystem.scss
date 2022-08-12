@@ -1,5 +1,17 @@
 .AnimalEmergencySystem{
+
     .aes_wrapper{
+        // margin-top: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        // background-color: gray;
+        // height: 90vh;
+
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+
         // display: flex;
         // align-items: center;
         // justify-content: center;
@@ -11,6 +23,7 @@
             .image{
                 img{
                     width: 250px;
+                    border-radius: 50%;
                 }
             }
             h1{
@@ -20,30 +33,46 @@
             }
 
         }
+        .aes_intro_bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+
+        .service_desc{
+            width: 50%;
+            font-size: 22px;
+            line-height: 35px;
+            letter-spacing: 2px;
+        }
+        
         .contact{
             margin: 1.5rem;
             font-size: 35px;
             font-weight: normal;
 
             .numbers{
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
                 flex-direction: column;
                 div{
+                    background-color: white;
+
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 10px;
 
-                    font-size: 20px;
+                    font-size: 18px;
                     margin-top: 10px;
                     box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 10px;
                     // background-color: yellow;
-                    letter-spacing: 3px;
+                    letter-spacing: 2px;
                     // width: 300px;
 
                     span{
@@ -56,11 +85,87 @@
                         justify-content: center;
 
                         // background-color: rgb(255, 255, 255);
-                        background-color: yellow;
+                        background-color: rgb(255, 157, 0);
                         border-radius: 50%;
                     }
                 }
             }
         }
     }
+    }
+
+    .aes_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .aes_content_wrapper{
+            width: 80%;
+
+        .p1, .p2, .p3, .p4, .p5, .p6, .p7{
+
+            color: rgb(20, 25, 28);
+            text-align: center;
+            // margin: 20px;
+            margin: 40px;
+            // width: 60%;
+            line-height: 40px;
+            font-size: 20px;
+        }
+
+
+        // .process{
+        //     box-shadow: 0 6px 16px 0 rgb(0 0 0 / 20%);
+        //     padding: 10px;
+
+        // }
+
+        margin-bottom: 2rem;
+        
+    }
+    }
+
+
+    @media screen {
+        .aes_wrapper{
+
+            .heading{
+                h1{
+                    font-size: 45px;
+                }
+
+                margin-bottom: 2rem;
+            }
+            .aes_intro_bottom{
+                flex-direction: column;
+                
+                .service_desc{
+                    width: 90%;
+                    font-size: 20px;
+                }
+
+            }
+        }
+
+        .aes_content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .aes_content_wrapper{
+                width: 100%;
+    
+            .p1, .p2, .p3, .p4, .p5, .p6, .p7{
+    
+                color: rgb(20, 25, 28);
+                text-align: center;
+                // margin: 40px;
+                // line-height: 20px;
+                font-size: 15px;
+            }
+                
+        }
+        }
+    }
+
 }

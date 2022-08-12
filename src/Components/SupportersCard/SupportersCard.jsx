@@ -2,6 +2,7 @@ import {
   Facebook,
   Flip,
   Instagram,
+  LinkedIn,
   Map,
   OpenInNew,
   Place,
@@ -24,6 +25,7 @@ const SupportersCard = ({
   maps_Link,
   facebook_Link,
   instagram_Link,
+  linkedin_Link
 }) => {
 
   const [flip, setFlip] = useState(false)
@@ -81,11 +83,19 @@ const SupportersCard = ({
                   </span>
                 </a>
               )}
+
+              {linkedin_Link && (
+                <a target="_blank" className="icons" href={linkedin_Link}>
+                  <span>
+                    <LinkedIn style={{ fontSize: "25px" }} />
+                  </span>
+                </a>
+              )}
             </div>
           </div>
 
-          <div className="flip">
-            <span><RotateRight style={{ fontSize: "20px" }} onClick={() => {setFlip(!flip)}}/></span>
+          <div className="flip" onClick={() => {setFlip(!flip)}}>
+            <RotateRight style={{ fontSize: "20px" }} />More...
           </div>
         </div>
 
@@ -98,8 +108,8 @@ const SupportersCard = ({
           </div>
         </div>
 
-        <div className="flip">
-            <span><RotateRight style={{ fontSize: "20px" }} onClick={() => {setFlip(!flip)}}/></span>
+        <div className="flip" onClick={() => {setFlip(!flip)}}>
+            <span><RotateRight style={{ fontSize: "20px" }} /></span>
           </div>
       </div>
       </div>

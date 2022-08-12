@@ -1,8 +1,22 @@
 .supporters{
+
+
+    .heading{
+        h1{
+            font-size: 40px;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+
     .supporters_cards{
-        margin: 0 2rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        // margin: 0 2rem;
+        // margin-top: 6rem;
+        padding: 1rem;
+        margin-bottom: 33vh;
 
         display: flex;
         align-items: center;
@@ -10,12 +24,12 @@
         .supporters_cards_wrapper{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 40px 50px; 
+            gap: 40px 40px; 
             
 
             @media screen and (max-width : 1200px){
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 gap: 40px 30px;   
             }
             @media screen and (max-width : 1111px){

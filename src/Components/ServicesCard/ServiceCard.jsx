@@ -1,22 +1,32 @@
-import React from 'react'
-import "./serviceCard.scss"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./serviceCard.scss";
 
-const ServiceCard = () => {
+const ServiceCard = ({ img, service_name, to_link, coming_soon }) => {
   return (
-    <div className='serviceCard'>
-      <div className="serviceCardWrapper">
+    <div className="serviceCard">
 
+      <Link to={to_link} className="link">
+
+      <div className="serviceCardWrapper">
         <div className="service_image">
-          <img src="./Images/Animal_Emergency_System.jpeg" alt="" />
+          <img src={`./Images/${img}`} alt="" />
         </div>
 
         <div className="service_title">
-          <p>Animal Emergency System</p>
+          <p>{service_name}</p>
         </div>
 
+        {coming_soon && (
+          <div className="coming_soon">
+            <span>coming soon</span>
+          </div>
+        )
+        }
       </div>
-    </div>  
-  )
-}
+      </Link>
+    </div>
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;

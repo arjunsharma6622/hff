@@ -9,10 +9,37 @@ const Ourservice = () => {
   return (
     <div className='ourservice'> 
       <Navbar />
+
+      <div className="heading">
+        <h1>Our Services</h1>
+      </div>
+
       <div className="serviceCards">
-        <Link to="/animal_emergency_system" className='link'>
-      <ServiceCard />
-      </Link>
+
+      <ServiceCard 
+      service_name="Animal Emergency System"
+      img="Animal_Emergency_System.jpeg"
+      to_link="/animal_emergency_system"
+      />
+      <ServiceCard 
+      service_name="Throw a Party"
+      img="throw_a_party.png"
+      to_link="/throw_a_party"
+      coming_soon={true}
+      />
+      <ServiceCard 
+      service_name="Emergency Funds"
+      img="emergency_fund.png"
+      to_link="/emergency_fund"
+      coming_soon={true}
+      />
+      <ServiceCard 
+      service_name="Self Defence Camps"
+      img="mma_service.png"
+      to_link="/self_defence"
+      coming_soon={true}
+      />
+
       </div>
       <Footer />
     </div>

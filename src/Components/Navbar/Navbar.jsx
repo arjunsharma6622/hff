@@ -1,29 +1,27 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Menu, Cancel, Close, ChevronRight } from "@mui/icons-material";
+import axios from "axios";
 
-const Navbar = ({subpage}) => {
-  const location = useLocation();
-  const { pathname } = location;
+
+
+const Navbar = ({ subpage }) => {
+
+
   const splitLocation = pathname.split("/");
 
   const [toggle, setToggle] = useState(false);
 
+
   return (
     <div className="navbar">
       <div className="wrapper">
-        <Link
-          className="link"
-          to={"/"}
-        >
+        <Link className="link" to={"/"}>
           <div className="left">
-            <img src="./Images/HFF_Logo1.png" alt="j" />
-            <span>{subpage ? "Hero For Fun" + " | " + subpage : "Hero For Fun"}</span>
-            
-            {/* {subpage && (
-              <p className="subpage">{ subpage}</p>
-            )} */}
+            <img src="./Images/Logo_HFF.png" alt="j" />
+            <span>{subpage && subpage}</span>
+
           </div>
         </Link>
 
@@ -49,8 +47,13 @@ const Navbar = ({subpage}) => {
             <div className="ourService">Team</div>
           </Link>
 
-          <Link className={splitLocation[1] === "supporters" ? "link active" : "link"} to={"/supporters"}>
-          <div className="ourService">Supporters</div>
+          <Link
+            className={
+              splitLocation[1] === "supporters" ? "link active" : "link"
+            }
+            to={"/supporters"}
+          >
+            <div className="ourService">Supporters</div>
           </Link>
 
           <Link
@@ -66,10 +69,12 @@ const Navbar = ({subpage}) => {
           >
             <div className="contact">Contact</div>
           </Link>
+
         </div>
 
         <div className="nav_menu">
           <Menu
+            className="open_menu_icon"
             onClick={() => {
               setToggle(true);
             }}
@@ -78,7 +83,12 @@ const Navbar = ({subpage}) => {
           {toggle && (
             <div className="menu_list">
               <div className="close">
-                <Cancel onClick={() => {setToggle(false)}}/>
+                <Cancel
+                  className="close_menu_icon"
+                  onClick={() => {
+                    setToggle(false);
+                  }}
+                />
               </div>
               <Link
                 className={splitLocation[1] === "" ? "link active" : "link"}
@@ -103,10 +113,14 @@ const Navbar = ({subpage}) => {
                 <div className="ourService">Team</div>
               </Link>
 
-
-              <Link className={splitLocation[1] === "supporters" ? "link active" : "link"} to={"/supporters"}>
-          <div className="ourService">Supporters</div>
-          </Link>
+              <Link
+                className={
+                  splitLocation[1] === "supporters" ? "link active" : "link"
+                }
+                to={"/supporters"}
+              >
+                <div className="ourService">Supporters</div>
+              </Link>
 
               <Link
                 className={
